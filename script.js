@@ -1,10 +1,10 @@
 //your JS code here. If required.
-functionName(){
-	alert("functionName");
+function functionName(){
+	alert(arguments.callee.name);
 };
-document.addEventListner("click",functionName);
+functionName()
 
-AccioJob(){
-	alert("AccioJob");
+function AccioJob(){
+	alert(arguments.callee.name);
 };
-document.addEventListner("click",AccioJob);
+AccioJob();
